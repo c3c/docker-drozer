@@ -34,6 +34,8 @@ RUN rm *.deb
 
 RUN apt-get install -y zlib1g
 
+RUN rm /tmp/adb.log
+
 # Run as drozer user
 USER drozer
 
