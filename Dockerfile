@@ -36,7 +36,7 @@ RUN apt-get install -y zlib1g
 
 RUN dpkg --add-architecture i386
 RUN apt-get update
-RUN apt-get install zlib1g:i386
+RUN apt-get -y install zlib1g:i386
 
 RUN rm /tmp/adb.log
 
