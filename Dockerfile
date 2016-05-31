@@ -32,13 +32,12 @@ RUN wget -c 'https://www.mwrinfosecurity.com/system/assets/931/original/drozer_2
 RUN dpkg -i drozer_2.3.4.deb
 RUN rm *.deb
 
-RUN apt-get install -y zlib1g lib32z1
-
+RUN apt-get install -y zlib1g
 
 RUN rm /tmp/adb.log
 
 # Run as drozer user
-USER drozer
+#USER drozer
 
 # Download agent
 RUN wget -c 'https://www.mwrinfosecurity.com/system/assets/934/original/drozer-agent-2.3.4.apk'
