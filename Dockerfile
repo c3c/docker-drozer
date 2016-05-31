@@ -32,7 +32,7 @@ RUN wget -c 'https://www.mwrinfosecurity.com/system/assets/931/original/drozer_2
 RUN dpkg -i drozer_2.3.4.deb
 RUN rm *.deb
 
-RUN apt-get install -y zlib1g zlib1g:i386
+RUN apt-get install -y zlib1g lib32z1
 
 
 RUN rm /tmp/adb.log
